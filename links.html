@@ -53,6 +53,18 @@
             height: 100vh; /* Adjust the height as needed */
         }
     </style>
+    <script type="text/javascript">
+        function openVenmo() {
+            var venmoLink = "venmo://user?username=Samina-Aziz";
+            var fallbackURL = "https://venmo.com/Samina-Aziz"; 
+
+            window.location.href = venmoLink;
+
+            setTimeout(function() {
+                window.location.href = fallbackURL;
+            }, 500);
+        }
+    </script>
 </head>
 <body>
     <div class="ui segment">
@@ -92,10 +104,11 @@
                         </button>
                     </a>
                     <br><br>
-                    <a target="_blank" href="https://account.venmo.com/pay?recipients=Samina-Aziz">
+                    <!-- <a target="_blank" href="https://account.venmo.com/pay?recipients=Samina-Aziz"> -->
+                    <a href="javascript:openVenmo()">
                         <button class="ui left labeled icon button" style="background: #008CFF; color: white;">
                             <i class="vimeo v icon"></i>
-                            SASA Venmo
+                            SASA Venmo (Samina-Aziz)
                         </button>
                     </a>
                 </div>
